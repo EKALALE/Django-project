@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - Megamart</title>
+ {% load static %}
+
+ <style>
+    body{
+        margin: 40px 30px;
+        padding: 20px;
+    }
+    h1{
+
+        text-align: center;
+        color:red;
+    }
+    h2{
+        text-align:center;
+        color:blue;
+    }
+    img{
+        display: flexbox;
+        border-radius: 20px;
+        justify-content: center;
+
+    }
+
+ </style>
 </head>
 <body>
     <h1>Welcome to Megamart</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, dolor reiciendis et consequatur iure animi delectus porro velit qui, aliquam corporis iusto pariatur repellendus accusantium explicabo, sint officiis. Tempore, deleniti!</p>
+    <marquee behavior="alternate" direction="right"><h2>Our Products</h2></marquee>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates cupiditate sapiente? Nam, aperiam quidem perferendis assumenda maiores soluta nobis alias delectus, ipsam mollitia vero accusantium repellat perspiciatis non consectetur.</p>
+    <img src="{% static 'images/watch1.png'%}" alt="">
+    <img src="{% static 'images/watch2.png'%}" alt="">
+    <img src="{% static 'images/watch3.png'%}" alt="">
+    <img src="{% static 'images/watch4.png'%}" alt="">
+    <img src="{% static 'images/watch5.png'%}" alt="">
+    <img src="{% static 'images/watch6.png'%}" alt="">
+    <img src="{% static 'images/watch7.png'%}" alt="">
+    <img src="{% static 'images/watch8.png'%}" alt="">
     
 </body>
 </html>
